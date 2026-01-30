@@ -15,9 +15,13 @@ My research centers on Sketch4ML, where I focus on designing memory- and computa
 
 # Publications
 
-- **[Matrix Sketching in Bandits: Current Pitfalls and New Framework](https://arxiv.org/abs/2410.10258)**  
-  **Dongxie Wen**, Hanyan Yin, Xiao Zhang, Zhewei Wei.  
-  ArXiv. [\[Paper\]](https://arxiv.org/abs/2410.10258)
+- **[Revisiting Matrix Sketching in Linear Bandits: Achieving Sublinear Regret via Dyadic Block Sketching](https://openreview.net/forum?id=FKEHiHU4bN&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2026%2FConference%2FAuthors%23your-submissions))**  
+  **Dongxie Wen**, Hanyan Yin, Xiao Zhang, Peng Zhao, Lijun Zhang, Zhewei Wei.  
+  In ICLR 2026. [\[Paper\]](https://openreview.net/forum?id=FKEHiHU4bN&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2026%2FConference%2FAuthors%23your-submissions))
+
+- **[AeroSketch: Near-Optimal Time Matrix Sketch Framework for Persistent, Sliding Window, and Distributed Streams](https://arxiv.org/abs/2601.02019)**
+  Hanyan Yin, **Dongxie Wen**, Jiajun Li, Zhewei Wei, Xiao Zhang, Peng Zhao, Zhi-Hua Zhou.
+  In SIGMOD 2026. [\[Paper\]](https://arxiv.org/abs/2601.02019)
 
 - **[Fast Second-Order Online Kernel Learning through Incremental Matrix Sketching and Decomposition](https://arxiv.org/abs/2410.11188)**  
   **Dongxie Wen**, Xiao Zhang\*, Zhewei Wei\*, Chenping Hou, Shuai Li, Weinan Zhang.  
