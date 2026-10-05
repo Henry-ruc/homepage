@@ -1,0 +1,41 @@
+---
+layout: profile
+title: "Beyond Research"
+section: beyond
+permalink: /beyond/
+gallery: true
+---
+<section class="content-card beyond-intro" aria-labelledby="beyond-heading">
+  <h2 class="section-heading" id="beyond-heading">Beyond Research</h2>
+  <p class="intro">Away from research, I enjoy sports, books, movies, and travel.</p>
+  <p class="beyond-lead">A few moments along the way.</p>
+  <nav class="gallery-nav" aria-label="Photo collections">
+    {% for group in site.data.beyond.groups %}<a href="#{{ group.id }}">{{ group.title }} <span aria-hidden="true">↘</span></a>{% endfor %}
+  </nav>
+</section>
+
+{% for group in site.data.beyond.groups %}
+<section class="content-card gallery-section" id="{{ group.id }}" aria-labelledby="{{ group.id }}-heading">
+  <div class="gallery-heading"><div><h2 id="{{ group.id }}-heading">{{ group.title }}</h2><p>{{ group.subtitle }}</p></div><span class="gallery-index" aria-hidden="true">0{{ forloop.index }}</span></div>
+  <div class="photo-gallery gallery--{{ group.id }}">
+    {% for photo in group.photos %}
+    <a class="photo-tile{% if photo.shape != '' %} photo-tile--{{ photo.shape }}{% endif %}" href="{{ photo.large | relative_url }}" data-gallery-photo data-caption="{{ photo.alt | escape }}" aria-label="View photo: {{ photo.alt | escape }}" target="_blank" rel="noopener">
+      <img src="{{ photo.src | relative_url }}" alt="{{ photo.alt | escape }}" width="{{ photo.width }}" height="{{ photo.height }}" loading="lazy" decoding="async">
+      <span class="photo-expand" aria-hidden="true">↗</span>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endfor %}
+
+<section class="content-card beyond-interests" aria-labelledby="interests-heading">
+  <h2 class="section-heading" id="interests-heading">Other interests</h2>
+  <div class="interest-list">{% for interest in site.data.cv.interests %}{% if interest.keywords.size > 0 %}<div><h3>{{ interest.name }}</h3><p>{{ interest.keywords | join: ' · ' }}</p></div>{% endif %}{% endfor %}</div>
+</section>
+
+<dialog class="photo-viewer" aria-label="Photo viewer">
+  <div class="viewer-toolbar"><span class="viewer-counter" aria-live="polite"></span><button class="viewer-close" type="button" aria-label="Close photo viewer">×</button></div>
+  <button class="viewer-prev viewer-arrow" type="button" aria-label="Previous photo">‹</button>
+  <figure class="viewer-figure"><img class="viewer-image" alt=""><figcaption class="viewer-caption"></figcaption></figure>
+  <button class="viewer-next viewer-arrow" type="button" aria-label="Next photo">›</button>
+</dialog>

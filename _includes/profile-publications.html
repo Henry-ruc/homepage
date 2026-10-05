@@ -1,0 +1,22 @@
+{% assign papers = site.publications | sort: 'date' | reverse %}
+<div class="publication-list">
+  {% for paper in papers %}
+  <article class="publication">
+    {% if paper.image %}
+    <figure class="paper-figure">
+      <a class="paper-thumbnail" href="{{ paper.image | relative_url }}" target="_blank" rel="noopener" aria-label="View full-size illustration for {{ paper.title | escape }}">
+        <img src="{{ paper.image | relative_url }}" alt="{{ paper.image_alt | escape }}" width="{{ paper.image_width }}" height="{{ paper.image_height }}" loading="lazy" decoding="async">
+        <span class="figure-expand" aria-hidden="true">↗</span>
+      </a>
+    </figure>
+    {% endif %}
+    <div class="paper-content">
+      <h3><a href="{{ paper.paperurl }}">{{ paper.title }}</a></h3>
+      {% if paper.award %}<div class="paper-award"><a class="award-badge" href="{{ paper.awardurl }}">{% include award-icon.svg %}<span>{{ paper.award }}</span></a></div>{% endif %}
+      <p class="paper-authors">{% for author in paper.authors %}{% if author contains site.name %}<strong>{{ author }}</strong>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+      <div class="paper-meta"><span class="venue-badge">{{ paper.venue }} {{ paper.date | date: '%Y' }}</span>{% if paper.publication_status %}<span class="publication-status">{{ paper.publication_status }}</span>{% endif %}{% if paper.featured_news %}<span class="paper-new">Latest</span>{% endif %}</div>
+      <div class="paper-links"><a href="{{ paper.paperurl }}">[ Paper ]</a>{% if paper.preprinturl %}<a href="{{ paper.preprinturl }}">[ arXiv ]</a>{% endif %}{% if paper.codeurl %}<a href="{{ paper.codeurl }}">[ Code ]</a>{% endif %}{% if paper.blogurl %}<a href="{{ paper.blogurl }}">[ Blog ]</a>{% endif %}</div>
+    </div>
+  </article>
+  {% endfor %}
+</div>

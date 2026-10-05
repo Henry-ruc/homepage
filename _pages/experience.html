@@ -1,0 +1,42 @@
+---
+layout: profile
+title: "Experience & Education"
+section: experience
+permalink: /experience/
+---
+<section class="content-card" aria-labelledby="experience-heading">
+  <h2 class="section-heading" id="experience-heading">Experience &amp; Education</h2>
+  <h3 class="subsection-heading">Visiting</h3>
+  <div class="timeline">
+    <article class="timeline-item institution-entry">
+      <a class="institution-mark oxford-mark" href="https://www.cs.ox.ac.uk/" aria-label="University of Oxford Department of Computer Science"><img src="{{ '/images/institutions/oxford-cs.png' | relative_url }}" alt="University of Oxford Department of Computer Science logo" width="228" height="110"></a>
+      <div class="institution-content">
+        <div class="timeline-topline"><h4><a href="https://www.ox.ac.uk/">University of Oxford</a></h4><span class="current-label">Current</span></div>
+        <p>Research visit</p>
+        <p class="muted">Department of Computer Science</p>
+        <p class="muted">Host: <a href="https://www.cs.ox.ac.uk/people/graham.cormode/">Prof. Graham Cormode</a></p>
+        <p class="muted">Oxford, United Kingdom</p>
+      </div>
+    </article>
+  </div>
+  <h3 class="subsection-heading">Education</h3>
+  <div class="timeline">
+    {% for education in site.data.cv.education %}
+    <article class="timeline-item institution-entry">
+      <a class="institution-mark ruc-mark" href="https://www.ruc.edu.cn/" aria-label="Renmin University of China"><img src="{{ '/images/institutions/ruc.png' | relative_url }}" alt="Renmin University of China emblem" width="924" height="301" loading="lazy"></a>
+      <div class="institution-content">
+        <div class="timeline-topline"><h4><a href="https://www.ruc.edu.cn/">{{ education.institution }}</a></h4><span class="timeline-date">{{ education.startDate }} – {{ education.endDate }}</span></div>
+        <p>{{ education.area }}</p>
+        {% if forloop.first %}<p class="muted"><a href="https://gsai.ruc.edu.cn/">Gaoling School of Artificial Intelligence</a></p><p class="muted">Advisor: <a href="https://gsai.ruc.edu.cn/zhewei">Prof. Zhewei Wei</a></p>{% else %}<p class="muted">School of Statistics</p>{% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+<section class="content-card" aria-labelledby="recognition-heading">
+  <h2 class="section-heading" id="recognition-heading">Recognition</h2>
+  <div class="recognition institution-entry">
+    <a class="institution-mark vldb-mark" href="https://www.vldb.org/2024/" aria-label="VLDB 2024"><img src="{{ '/images/institutions/vldb-2024.png' | relative_url }}" alt="VLDB 2024 Guangzhou logo" width="2145" height="1570" loading="lazy"></a>
+    <div class="institution-content"><span class="recognition-year">2024</span><h3>VLDB Best Paper Candidate Award</h3><p>Optimal Matrix Sketching over Sliding Windows</p><a href="https://arxiv.org/abs/2405.07792">Read the paper ↗</a></div>
+  </div>
+</section>

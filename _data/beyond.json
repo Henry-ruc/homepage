@@ -1,0 +1,178 @@
+{
+  "groups": [
+    {
+      "id": "travel",
+      "title": "On the road",
+      "subtitle": "Mountains, water, and new places.",
+      "photos": [
+        {
+          "id": "lakeside-village",
+          "alt": "A lakeside village beneath mountains and low clouds.",
+          "shape": "wide",
+          "src": "/images/beyond/lakeside-village.webp",
+          "large": "/images/beyond/lakeside-village-large.webp",
+          "width": 960,
+          "height": 640
+        },
+        {
+          "id": "city-overlook",
+          "alt": "A panoramic view of a coastal city, mountains, and a hilltop statue.",
+          "shape": "",
+          "src": "/images/beyond/city-overlook.webp",
+          "large": "/images/beyond/city-overlook-large.webp",
+          "width": 960,
+          "height": 720
+        },
+        {
+          "id": "mountain-lake",
+          "alt": "Looking across a mountain lake.",
+          "shape": "",
+          "src": "/images/beyond/mountain-lake.webp",
+          "large": "/images/beyond/mountain-lake-large.webp",
+          "width": 960,
+          "height": 640
+        },
+        {
+          "id": "stone-courtyard",
+          "alt": "Taking a break among sunlit stone walls.",
+          "shape": "",
+          "src": "/images/beyond/stone-courtyard.webp",
+          "large": "/images/beyond/stone-courtyard-large.webp",
+          "width": 960,
+          "height": 720
+        },
+        {
+          "id": "river-boat",
+          "alt": "A small boat on a river surrounded by wooded hills.",
+          "shape": "",
+          "src": "/images/beyond/river-boat.webp",
+          "large": "/images/beyond/river-boat-large.webp",
+          "width": 960,
+          "height": 720
+        },
+        {
+          "id": "shrine-walk",
+          "alt": "Walking beside bright orange gates and trees.",
+          "shape": "portrait",
+          "src": "/images/beyond/shrine-walk.webp",
+          "large": "/images/beyond/shrine-walk-large.webp",
+          "width": 720,
+          "height": 960
+        },
+        {
+          "id": "city-stairway",
+          "alt": "Exploring a narrow city stairway lined with signs and plants.",
+          "shape": "portrait",
+          "src": "/images/beyond/city-stairway.webp",
+          "large": "/images/beyond/city-stairway-large.webp",
+          "width": 720,
+          "height": 960
+        },
+        {
+          "id": "monument",
+          "alt": "An equestrian monument beneath a cloudy sky.",
+          "shape": "",
+          "src": "/images/beyond/monument.webp",
+          "large": "/images/beyond/monument-large.webp",
+          "width": 960,
+          "height": 640
+        },
+        {
+          "id": "harbour-at-dusk",
+          "alt": "A harbour and city lights beneath an orange evening sky.",
+          "shape": "",
+          "src": "/images/beyond/harbour-at-dusk.webp",
+          "large": "/images/beyond/harbour-at-dusk-large.webp",
+          "width": 960,
+          "height": 439
+        }
+      ]
+    },
+    {
+      "id": "sports",
+      "title": "Outdoors & sport",
+      "subtitle": "On the slopes and on the pitch.",
+      "photos": [
+        {
+          "id": "snowboarding",
+          "alt": "Standing on a snowy slope with a snowboard.",
+          "shape": "tall",
+          "src": "/images/beyond/snowboarding.webp",
+          "large": "/images/beyond/snowboarding-large.webp",
+          "width": 720,
+          "height": 960
+        },
+        {
+          "id": "football-evening",
+          "alt": "A football team gathering on the pitch at night.",
+          "shape": "",
+          "src": "/images/beyond/football-evening.webp",
+          "large": "/images/beyond/football-evening-large.webp",
+          "width": 960,
+          "height": 640
+        },
+        {
+          "id": "field-gathering",
+          "alt": "A group photo with a university banner on a sunny sports field.",
+          "shape": "",
+          "src": "/images/beyond/field-gathering.webp",
+          "large": "/images/beyond/field-gathering-large.webp",
+          "width": 960,
+          "height": 640
+        }
+      ]
+    },
+    {
+      "id": "moments",
+      "title": "People & evenings",
+      "subtitle": "Conversations, music, and a little celebration.",
+      "photos": [
+        {
+          "id": "speaking",
+          "alt": "Speaking into a microphone at an event.",
+          "shape": "",
+          "src": "/images/beyond/speaking.webp",
+          "large": "/images/beyond/speaking-large.webp",
+          "width": 960,
+          "height": 640
+        },
+        {
+          "id": "conference",
+          "alt": "Listening during an academic event.",
+          "shape": "tall",
+          "src": "/images/beyond/conference.webp",
+          "large": "/images/beyond/conference-large.webp",
+          "width": 639,
+          "height": 960
+        },
+        {
+          "id": "live-music",
+          "alt": "An evening concert under red lights in a stadium.",
+          "shape": "",
+          "src": "/images/beyond/live-music.webp",
+          "large": "/images/beyond/live-music-large.webp",
+          "width": 960,
+          "height": 720
+        },
+        {
+          "id": "fireworks-silhouette",
+          "alt": "Watching bright fireworks in the night sky.",
+          "shape": "portrait",
+          "src": "/images/beyond/fireworks-silhouette.webp",
+          "large": "/images/beyond/fireworks-silhouette-large.webp",
+          "width": 640,
+          "height": 960
+        },
+        {
+          "id": "fireworks-over-water",
+          "alt": "Pink fireworks reflected on water.",
+          "shape": "portrait",
+          "src": "/images/beyond/fireworks-over-water.webp",
+          "large": "/images/beyond/fireworks-over-water-large.webp",
+          "width": 779,
+          "height": 960
+        }
+      ]
+    }
+  ]
+}
