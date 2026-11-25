@@ -50,6 +50,7 @@
       <h2 id="news-heading">News</h2>
       <ul class="news-list">
         <li><span class="news-date">Currently <span class="new-label">Now</span></span><p>Visiting the <a href="https://www.ox.ac.uk/">University of Oxford</a> with <a href="https://www.cs.ox.ac.uk/people/graham.cormode/">Graham Cormode</a>.</p></li>
+        <li class="news-recognition"><span class="news-date">2026 <span class="new-label">New</span></span><p>Recognized as a <a href="https://neurips.cc/Conferences/2026/ProgramCommittee#main-reviewer">Top Reviewer</a> for the NeurIPS 2026 Main Track.</p></li>
         {% assign latest_papers = site.publications | where: 'featured_news', true %}
         {% for paper in latest_papers %}
         <li><span class="news-date">{{ paper.date | date: '%b %Y' }} <span class="new-label">New</span></span><p><a href="{{ paper.paperurl }}">{{ paper.short_title | default: paper.title }}</a> in {{ paper.venue }}.</p></li>

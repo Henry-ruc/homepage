@@ -197,3 +197,25 @@ svg{display:block}
 @media(max-width:400px){.gallery-nav a{font-size:9px}.beyond-interests .interest-list{grid-template-columns:1fr;gap:16px}.gallery-heading h2{font-size:17px}.gallery-heading p{font-size:9px}.photo-gallery{gap:7px}}
 @media(prefers-reduced-motion:reduce){.photo-tile img,.photo-expand,.photo-viewer button{transition:none}}
 @media print{.gallery-nav,.photo-expand,.photo-viewer{display:none!important}.photo-gallery{break-inside:avoid}}
+
+/* Reviewer recognition shares the existing news and institution layout. */
+.news-recognition .news-date{font-size:12px}
+.news-recognition .new-label{font-size:12px;line-height:1.4;padding:1px 6px}
+.news-recognition a{color:#81508c;font-weight:600}
+.recognition+.recognition{border-top:1px solid var(--line);margin-top:24px;padding-top:24px}
+.recognition .recognition-year{font-size:12px}
+.recognition a{font-size:12px}
+.recognition-reviewer h3{display:flex;align-items:center;flex-wrap:wrap;gap:7px;line-height:1.6}
+.recognition-badge{display:inline-block;background:#f5eef8;color:#784382;border:1px solid #ebddf0;border-radius:5px;padding:2px 8px;font-size:13px;font-weight:600;line-height:1.5}
+.neurips-mark img{width:92px;max-width:100%;max-height:72px;object-fit:contain}
+
+.ijcai-mark img{width:96px;max-width:100%;max-height:72px;object-fit:contain}
+
+/* Talks reuse the institution layout with readable event details. */
+.talk-date{display:block;color:var(--muted);font-size:12px;margin-bottom:5px}
+.talk-entry h3{font-size:14px;font-weight:600;line-height:1.6}
+.talk-entry p{font-size:13px;line-height:1.7}
+.talk-event{margin-top:9px;color:var(--ink)}
+.talk-entry .talk-host{margin-top:2px;color:var(--muted);font-size:12px}
+.talk-link{display:inline-block;margin-top:10px;color:var(--accent);font-size:12px;font-weight:600}
+.baai-mark img{width:96px;max-width:100%;max-height:72px;object-fit:contain}

@@ -35,8 +35,48 @@ permalink: /experience/
 </section>
 <section class="content-card" aria-labelledby="recognition-heading">
   <h2 class="section-heading" id="recognition-heading">Recognition</h2>
+  <div class="recognition institution-entry recognition-reviewer">
+    <a class="institution-mark neurips-mark" href="https://neurips.cc/Conferences/2026/ProgramCommittee#main-reviewer" aria-label="NeurIPS 2026 top main reviewers"><img src="{{ '/images/institutions/neurips.svg' | relative_url }}" alt="NeurIPS logo" width="36" height="36" loading="lazy"></a>
+    <div class="institution-content">
+      <span class="recognition-year">2026</span>
+      <h3>NeurIPS <span aria-hidden="true">·</span> <span class="recognition-badge">Top Reviewer</span></h3>
+      <p>Main Track</p>
+      <a href="https://neurips.cc/Conferences/2026/ProgramCommittee#main-reviewer">Official recognition ↗</a>
+    </div>
+  </div>
+  <div class="recognition institution-entry recognition-scholarship">
+    <span class="institution-mark ruc-mark"><img src="{{ '/images/institutions/ruc.png' | relative_url }}" alt="Renmin University of China emblem" width="924" height="301" loading="lazy"></span>
+    <div class="institution-content">
+      <span class="recognition-year">2024, 2025, 2026</span>
+      <h3>Academic Excellence Scholarship</h3>
+      <p>Renmin University of China</p>
+    </div>
+  </div>
+  <div class="recognition institution-entry recognition-chair">
+    <a class="institution-mark ijcai-mark" href="{{ '/images/recognition/ijcai-2025-session-chair.png' | relative_url }}" target="_blank" rel="noopener" aria-label="View IJCAI 2025 session chair certificate"><img src="{{ '/images/institutions/ijcai.png' | relative_url }}" alt="IJCAI logo" width="3567" height="923" loading="lazy"></a>
+    <div class="institution-content">
+      <span class="recognition-year">2025</span>
+      <h3>IJCAI · Session Chair</h3>
+      <p>ML: Generalization and Optimization<br>Guangzhou satellite event</p>
+      <a href="{{ '/images/recognition/ijcai-2025-session-chair.png' | relative_url }}" target="_blank" rel="noopener">View certificate ↗</a>
+    </div>
+  </div>
   <div class="recognition institution-entry">
     <a class="institution-mark vldb-mark" href="https://www.vldb.org/2024/" aria-label="VLDB 2024"><img src="{{ '/images/institutions/vldb-2024.png' | relative_url }}" alt="VLDB 2024 Guangzhou logo" width="2145" height="1570" loading="lazy"></a>
     <div class="institution-content"><span class="recognition-year">2024</span><h3>VLDB Best Paper Candidate Award</h3><p>Optimal Matrix Sketching over Sliding Windows</p><a href="https://arxiv.org/abs/2405.07792">Read the paper ↗</a></div>
   </div>
+</section>
+<section class="content-card" aria-labelledby="talks-heading">
+  <h2 class="section-heading" id="talks-heading">Talks</h2>
+  {% assign talk_paper = site.publications | where: 'permalink', '/publication/dyadic-block-sketching/' | first %}
+  <article class="talk-entry institution-entry">
+    <a class="institution-mark baai-mark" href="{{ talk_paper.talkurl }}" aria-label="BAAI Community ICLR 2026 pre-talk event"><img src="{{ '/images/institutions/baai-community.svg' | relative_url }}" alt="BAAI Community logo" width="109" height="31" loading="lazy"></a>
+    <div class="institution-content">
+      <time class="talk-date" datetime="2026-04-14">14 Apr 2026</time>
+      <h3>{{ talk_paper.title }}</h3>
+      <p class="talk-event">ICLR 2026 Pre-talk</p>
+      <p class="talk-host">BAAI Community × DeepTech</p>
+      <a class="talk-link" href="{{ talk_paper.talkurl }}">Event page ↗</a>
+    </div>
+  </article>
 </section>
